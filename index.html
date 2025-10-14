@@ -12,7 +12,23 @@
         .profile-img { width: 120px; border-radius: 50%; margin-bottom: 1rem; }
         ul { padding-left: 1.2rem; }
         .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
-        .project-card { background: #f9f9f9; padding: 1rem; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);}
+        .project-card {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .project-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .project-card:hover {
+            box-shadow: 0 4px 16px rgba(45,137,239,0.15);
+            transform: translateY(-4px) scale(1.03);
+            cursor: pointer;
+        }
         footer { text-align: center; padding: 1rem; background: #eee; margin-top: 2rem; }
     </style>
 </head>
@@ -48,31 +64,42 @@
         <section>
             <h2>Projets</h2>
             <div class="projects">
-                <div class="project-card">
-                    <h3>Bloc 1</h3>
-                    <p>Description du Bloc 1.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Bloc 2</h3>
-                    <p>Description du Bloc 2.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Bloc 3</h3>
-                    <p>Description du Bloc 3.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Bloc 4</h3>
-                    <p>Description du Bloc 4.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Bloc 5</h3>
-                    <p>Description du Bloc 5.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Bloc 6</h3>
-                    <p>Description du Bloc 6.</p>
-                    <a href="http://marius-chiapella.github.io/Marius Chiapella.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a>
-                </div>
+                <a href="bloc1.html" class="project-link">
+                    <div class="project-card">
+                        <h3>Bloc 1</h3>
+                        <p>Description du Bloc 1.</p>
+                    </div>
+                </a>
+                <a href="bloc2.html" class="project-link">
+                    <div class="project-card">
+                        <h3>Bloc 2</h3>
+                        <p>Description du Bloc 2.</p>
+                    </div>
+                </a>
+                <a href="bloc3.html" class="project-link">
+                    <div class="project-card">
+                        <h3>Bloc 3</h3>
+                        <p>Description du Bloc 3.</p>
+                    </div>
+                </a>
+                <a href="bloc4.html" class="project-link">
+                    <div class="project-card">
+                        <h3>Bloc 4</h3>
+                        <p>Description du Bloc 4.</p>
+                    </div>
+                </a>
+                <a href="bloc5.html" class="project-link">
+                    <div class="project-card">
+                        <h3>Bloc 5</h3>
+                        <p>Description du Bloc 5.</p>
+                    </div>
+                </a>
+                <a href="bloc6.html" class="project-link">
+                    <div class="project-card">
+                        <h3>Bloc 6</h3>
+                        <p>Description du Bloc 6.</p>
+                    </div>
+                </a>
             </div>
         </section>
         <section>
