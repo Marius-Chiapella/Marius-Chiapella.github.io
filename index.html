@@ -1,58 +1,79 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="data/usables/css/main.css">
-    <title>Portfolio</title>
+    <title>Student E-Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+        header { background: #2d89ef; color: #fff; padding: 2rem 1rem; text-align: center; }
+        .container { max-width: 900px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        h2 { color: #2d89ef; margin-top: 2rem; }
+        .profile-img { width: 120px; border-radius: 50%; margin-bottom: 1rem; }
+        ul { padding-left: 1.2rem; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .project-card { background: #f9f9f9; padding: 1rem; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);}
+        footer { text-align: center; padding: 1rem; background: #eee; margin-top: 2rem; }
+    </style>
 </head>
 <body>
-    <h1>Marius Chiapella - E-Portfolio</h1>
-
-    <p>
-        Profile
-
-        <h4>Compétences</h4>
-        <h4>Objectifs d'études</h4>
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
-    </p>
-
-        <h3>B1</h3>
-        <p>
-            Content bloc 1
-        </p>
-        <h3>B2</h3>
-        <p>
-            Content bloc 2
-        </p>
-        <h3>B3</h3>
-        <p>
-            Content bloc 3
-        </p>
-        <h3>B4</h3>
-        <p>
-            Content bloc 4
-        </p>
-        <h3>B5</h3>
-        <p>
-            Content bloc 5
-        </p>
-
-    <p>
-        <a href="data/CV/Marius Chiapella.pdf" target="_blank" rel="noopener noreferrer">Le CV</a>
-    </p>
-
-    <p>
-        <h3>Bloc 6</h3> <br>
-        
-        <ul>
-            <li>Compte Linked In</li>
-            <li>Veille Technologique</li>
-            <li>Certifications / Formations</li>
-        </ul>
-        <a href="data/CV/Marius Chiapella.pdf" target="_blank" rel="noopener noreferrer">Le CV</a>
-    </p>
+    <header>
+        <img src="https://via.placeholder.com/120" alt="Student Photo" class="profile-img">
+        <h1>Jane Doe</h1>
+        <p>Computer Science Student | Aspiring Web Developer</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am a passionate computer science student with a keen interest in web development and design.
+                I enjoy learning new technologies and building projects that solve real-world problems.
+            </p>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>B.Sc. in Computer Science, XYZ University (2022 - Present)</li>
+                <li>High School Diploma, ABC High School (2018 - 2022)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, Java</li>
+                <li>React, Bootstrap</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Personal Website</h3>
+                    <p>A responsive website to showcase my portfolio and resume.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <p>Built a weather forecast app using JavaScript and OpenWeather API.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Quiz Game</h3>
+                    <p>Developed a fun quiz game using Python and Tkinter.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>Email: janedoe@email.com</p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/janedoe</a></p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Jane Doe. All rights reserved.
+    </footer>
 </body>
 </html>
